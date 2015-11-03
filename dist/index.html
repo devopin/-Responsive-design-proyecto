@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mi Página</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+		<style></style>
+		
+</head>
+<body>
+	
+	<header class="header">
+		<div class="header-mobile">
+			<h1 class="header-logo">Logo</h1>
+			<button id="btnMenu" class="header-btn-nav">
+				<i class="fa fa-bars"></i>
+			</button>
+		</div>
+		
+		<nav class="header-menu-navbar">
+			<ul id="navbarMenu" class="header-menu-list">
+				<li class="header-menu-list-item">
+					<a href="">Inicio</a>
+				</li>
+				<li class="header-menu-list-item">
+					<a href="">Acerca de</a>
+				</li>
+				<li class="header-menu-list-item">
+					<a href="">Blog</a>
+				</li>
+				<li class="header-menu-list-item">
+					<a href="">Contacto</a>
+				</li>
+			</ul>
+		</nav>		
+	</header>
+
+	<article class="content">
+
+		<section class="content-text">
+			<div class="container">
+				<div class="video-container">
+					<iframe 
+						width="560" 
+						height="315" 
+						src="https://www.youtube.com/embed/AKl779JtIFc"
+						frameborder="0" 
+						allowfullscreen>
+					</iframe>
+				</div>
+			</div>	
+		</section>
+
+		<section class="content-features">
+			<div class="container">
+				<div class="content-block">
+					<h3 class="content-block-title">Feature 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="content-block">
+					<h3 class="content-block-title">Feature 2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="content-block">
+					<h3 class="content-block-title">Feature 3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="content-block">
+					<h3 class="content-block-title">Feature 4</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</div>	
+
+		</section>
+
+		<section class="content-text content-text-image">
+			<div class="container">
+				<picture>
+					<source media="(min-width: 768px)" srcset="img/img01-desktop.jpg">
+					<source media="(min-width: 320px)" srcset="img/img01-mobile-retina.jpg">
+					<img src="img/img01-mobile.jpg" alt="">
+				</picture>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nulla quaerat sequi dolore voluptate dolorum illum, fugiat libero labore, reprehenderit ipsum sapiente veniam culpa non quas minima ipsa, in qui.</p>
+			</div>	
+
+		</section>
+
+
+
+
+	</article>
+	
+		<script>!function e(t,n,o){function r(l,a){if(!n[l]){if(!t[l]){var c="function"==typeof require&&require;if(!a&&c)return c(l,!0);if(i)return i(l,!0);var s=new Error("Cannot find module '"+l+"'");throw s.code="MODULE_NOT_FOUND",s}var u=n[l]={exports:{}};t[l][0].call(u.exports,function(e){var n=t[l][1][e];return r(n?n:e)},u,u.exports,e,t,n,o)}return n[l].exports}for(var i="function"==typeof require&&require,l=0;l<o.length;l++)r(o[l]);return r}({1:[function(e,t,n){var o=function(e){var t=document.createElement("link");t.rel="stylesheet",t.href=e,document.head.appendChild(t)};t.exports=o},{}],2:[function(e,t,n){var o=function(){window.scrollY>=200?headerElem.classList.toggle(".header--light"):headerElem.classList.toggle(".header--light")};t.exports=o},{}],3:[function(e,t,n){!function(){function t(){function e(){r.classList.toggle("header-menu-list--show")}var t=document.getElementById("btnMenu"),r=document.getElementById("navbarMenu"),i=document.querySelector(".header");i.addEventListener("scroll",o),t.addEventListener("click",e),n("https://fonts.googleapis.com/css?family=Montserrat|Lato"),n("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css")}var n=e("./lib/loadCSS"),o=e("./lib/onScroll");document.addEventListener("DOMContentLoaded",t)}()},{"./lib/loadCSS":1,"./lib/onScroll":2}]},{},[3]);</script>
+	
+</body>
+</html>
